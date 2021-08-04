@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    height: 100vh;
+    background: url("pictures/background.jpg")fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.wrapper {
+    width: 350px;
+    height: 500px;
+    background: inherit;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    overflow: hidden;
+    margin-left: -175px;
+    margin-top: -250px;
+    border-radius: 8px;
+}
+
+.wrapper:before {
+    width: 400px;
+    height: 550px;
+    content: '';
+    position: absolute;
+    top: -25px;
+    left: -25px;
+    bottom: 0;
+    right: 0;
+    background: inherit;
+    box-shadow: inset 0 0 0 200px rgba(255, 255, 255, 0.2);
+    filter: blur(10px);
+}
+
+form img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+form {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+input {
+    background: 0;
+    width: 200px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+    margin: 20px 0;
+    padding-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+input[type="submit"] {
+    border: none;
+    border-radius: 8px;
+    padding-bottom: 0;
+    height: 60px;
+    background: #df2359;
+    color: #fff;
+    cursor: pointer;
+    transform: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background: #c0392b;
+}
+
+span a {
+    color: rgba(255, 255, 255, 0.8);
+}
