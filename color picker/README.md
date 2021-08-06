@@ -1,3 +1,7 @@
 This is a video from the project
-https://user-images.githubusercontent.com/75880393/128524067-268e46d3-4b98-40bc-829b-48b66cef7789.mp4
+
+![Capture](https://user-images.githubusercontent.com/75880393/128524537-3387727c-04b8-4563-a6fa-fccaac2a0b1e.PNG)
+
+
+
 
