@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Super_Parallax_Image_Scroll</title>
+</head>
+
+<body>
+    <br><br><br><br><br><br><br>
+    <h1>Friends_Image_Scroll</h1>
+    <a href="https://en.wikipedia.org/wiki/Courteney_Cox"><img src="pictures/1.jpg" class="pictures Friends Monica" alt="Monica"></a>
+    <a href="https://en.wikipedia.org/wiki/Matthew_Perry"><img src="pictures/2.jpg" class="pictures Friends Chandler" alt="Chandler"></a>
+    <a href="https://en.wikipedia.org/wiki/Jennifer_Aniston"><img src="pictures/5.jpg" class="pictures Friends rachel" alt="rachel"></a>
+    <a href="https://en.wikipedia.org/wiki/Matt_LeBlanc"><img src="pictures/3.jpg" class="pictures Friends joey" alt="joey"></a>
+    <a href="https://en.wikipedia.org/wiki/Lisa_Kudrow"><img src="pictures/6.jpg" class="pictures Friends phoebi" alt="phoebi"></a>
+    <a href="https://en.wikipedia.org/wiki/David_Schwimmer"><img src="pictures/4.jpg" class="pictures Friends ross" alt="ross"></a>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script>
+        var viewport = $(window),
+            root = $('html'),
+            maxScroll;
+
+        viewport.on({
+            scroll: function() {
+                var scrolled = viewport.scrollTop();
+                root.css({
+                    fontSize: (scrolled / maxScroll) * 50
+                });
+            },
+            resize: function() {
+                maxScroll = root.height() - viewport.height();
+            }
+        }).trigger('resize');
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    transition: all 400ms ease-in-out;
+}
+
+html{
+    height: 1100px;
+    background-color: #3bb78f;
+    background-image: linear-gradient(315deg, #3bb78f, #0bab64 74%);
+    font-family: sans-serif;
+    font-weight: 300;
+    color: white;
+}
+
+.pictures{
+    width: 250px;
+    height: 250px;
+}
+
+.Friends{
+    position: fixed;
+}
+
+h1{
+    top: 55px;
+    margin-top: 300px;
+    z-index: 5;
+}
+
+.Monica{
+    top: 170px;
+    margin-top: -27rem;
+    left: 6%;
+}
+
+.Chandler{
+    top: 280px;
+    margin-top: 55rem;
+    left: 20%;
+}
+
+.rachel{
+    top: 180px;
+    margin-top: -20rem;
+    left: 33%;
+    z-index: 10;
+}
+
+.ross{
+    top: 310px;
+    margin-top: 47rem;
+    left: 46%;
+}
+
+.phoebi{
+    top: 199px;
+    margin-top: -33rem;
+    left: 59%;
+}
+
+.joey{
+    top: 260px;
+    margin-top: 38rem;
+    left: 75%;
+}
+
+h1{
+    width: 100%;
+    font-size: 3em/1 
+    font-family'Oswald', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+img{
+    width: 20%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    border: 10px solid rgb(10, 134, 134);
+    border-radius: 50%;
+}
+
+img:hover{
+    border: 10px solid rgb(134, 10, 10);
+}
+
