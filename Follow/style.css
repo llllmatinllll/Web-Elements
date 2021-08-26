@@ -1,0 +1,142 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+    }
+    
+    body {
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to top, #bea2e7 0%, #86b7e7 100%);
+    }
+    
+    .wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+    
+    .wrapper .card {
+        background-color: #fff;
+        width: 430px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+        opacity: 0;
+        position: absolute;
+        pointer-events: none;
+        border-radius: 80px 5px 5px 80px;
+        -webkit-border-radius: 80px 5px 5px 80px;
+        -moz-border-radius: 80px 5px 5px 80px;
+        -ms-border-radius: 80px 5px 5px 80px;
+        -o-border-radius: 80px 5px 5px 80px;
+        animation: animate 15s linear infinite;
+        animation-delay: calc(3s * var(--delay));
+    }
+    /* .wrapper .card:last-child {
+        animation-delay: calc(-3s * var(--delay));
+    } */
+    
+    @keyframes animate {
+        0% {
+            opacity: 0;
+            transform: translatey(100%) scale(0.5);
+            -webkit-transform: translatey(100%) scale(0.5);
+            -moz-transform: translatey(100%) scale(0.5);
+            -ms-transform: translatey(100%) scale(0.5);
+            -o-transform: translatey(100%) scale(0.5);
+        }
+        5%,
+        20% {
+            opacity: 0.4;
+            transform: translatey(100%) scale(0.7);
+            -webkit-transform: translatey(100%) scale(0.7);
+            -moz-transform: translatey(100%) scale(0.7);
+            -ms-transform: translatey(100%) scale(0.7);
+            -o-transform: translatey(100%) scale(0.7);
+        }
+        25%,
+        40% {
+            opacity: 1;
+            pointer-events: auto;
+            transform: translatey(0%) scale(1);
+            -webkit-transform: translatey(0%) scale(1);
+            -moz-transform: translatey(0%) scale(1);
+            -ms-transform: translatey(0%) scale(1);
+            -o-transform: translatey(0%) scale(1);
+        }
+        45%,
+        60% {
+            opacity: 0.4;
+            pointer-events: auto;
+            -webkit-transform: translatey(-100%) scale(0.7);
+            -moz-transform: translatey(0%) scale(1);
+            -ms-transform: translatey(0%) scale(1);
+            -o-transform: translatey(0%) scale(1);
+        }
+        65%,
+        100% {
+            opacity: 1;
+            pointer-events: auto;
+            transform: translatey(-100%) scale(0.5);
+            -webkit-transform: translatey(-100%) scale(0.5);
+            -moz-transform: translatey(-100%) scale(0.5);
+            -ms-transform: translatey(-100%) scale(0.5);
+            -o-transform: translatey(-100%) scale(0.5);
+        }
+    }
+    
+    .card .content {
+        display: flex;
+        align-items: center;
+    }
+    
+    .wrapper .card .img {
+        width: 70px;
+        height: 70px;
+        position: absolute;
+        left: 5px;
+        background-color: #fff;
+        border-radius: 100%;
+        padding: 5px;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+        -webkit-border-radius: 100%;
+        -moz-border-radius: 100%;
+        -ms-border-radius: 100%;
+        -o-border-radius: 100%;
+    }
+    
+    .card .img img {
+        width: 100%;
+        height: 100%;
+        border-radius: 100%;
+        object-fit: cover;
+        -webkit-border-radius: 100%;
+        -moz-border-radius: 100%;
+        -ms-border-radius: 100%;
+        -o-border-radius: 100%;
+    }
+    
+    .card .datalist {
+        margin-left: 90px;
+    }
+    
+    .datalist .span {
+        font-weight: 600;
+        font-size: 18px;
+    }
+    
+    .card a {
+        text-decoration: none;
+        padding: 7px 18px;
+        border-radius: 18px;
+        background: linear-gradient(to top, #bea2e7 0%, #86b7e7 100%);
+        color: #fff;
+        -webkit-border-radius: 18px;
+        -moz-border-radius: 18px;
+        -ms-border-radius: 18px;
+        -o-border-radius: 18px;
+    }
