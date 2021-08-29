@@ -1,0 +1,44 @@
+body {
+    background: linear-gradient(to left, #42ff62, rgb(255, 252, 58));
+}
+
+input {
+    width: 300px;
+    height: 50px;
+    text-align: center;
+    float: left;
+    display: block;
+    border: 0px solid white;
+    border-bottom: 3px solid blue;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+input:hover {
+    border-color: red;
+}
+
+input::selection {
+    color: green;
+}
+
+i {
+    margin-left: 10px;
+    color: blue;
+}
+
+i:hover {
+    color: red;
+}
+
+aszgaszg div {
+    cursor: pointer;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25%;
+}
