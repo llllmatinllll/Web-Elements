@@ -1,0 +1,120 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Raleway", sans-serif;
+}
+
+.login_form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-505, -50%) scale(0);
+    width: 100%;
+    height: 100%;
+    background:#2d7bce ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    opacity: 0;
+    transition: all 200ms ease-in-out;
+}
+
+.login_form.active{
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+}
+
+.login_form .close_btn{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: #f5f5f5;
+    font-size: 20px;
+    padding: 10px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.login_form .form{
+    padding: 10px;
+    width: 400px;
+}
+
+.login_form .form .form_element{
+    margin: 20px 0px;
+}
+
+.login_form .form .form_element h2{
+    margin: 20px 0px;
+    text-align: center;
+    color: #f5f5f5;
+    font-size: 25px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.login_form .form .form_element input{
+    padding: 10px 0px;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 0px;
+    border-bottom: 1px solid #f5f5f5;
+    color: #f5f5f5;
+    background: transparent;
+    font-size: 16px;
+}
+
+.login_form .form .form_element input::placeholder{
+    color: #ddd;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.login_form .form .form_element button{
+    width: 100%;
+    height: 40px;
+    margin-top: 10px;
+    color: #2d7bce;
+    background: #f5f5f5;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    transition:background 200ms ease-in-out,
+                color 200ms ease-in-out;
+}
+
+.login_form .form .form_element button:hover{
+    color: #f5f5f5;
+    background: #2d7bce;
+    border: 1px solid #f5f5f5;
+}
+
+.open_login_btn{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    background: #2d7bce;
+    color: #f5f5f5;
+    font-size: 20px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all 200ms ease-in-out;
+    display: block;
+}
+
+.open_login_btn:hover{
+    box-shadow: 0px 2px 2px #ddd;
+}
+
+.open_login_btn.active{
+    color: #2d7bce;
+}
